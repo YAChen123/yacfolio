@@ -430,6 +430,15 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
+.project-title__header {
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0 auto; /* Center-align the title horizontally */
+  text-align: center; /* Center-align the title text */
+  margin-bottom: 3rem; 
+}
+    
+
 .project-details__content {
   padding: 8rem 0;
   max-width: 90rem;

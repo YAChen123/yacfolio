@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>System-Level Programming Projects</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="./assets/png/yen-an-chen.png" alt="Yen-An Chen Logo Picture" class="header__logo-img" />
+          </div>
+          <span class="header__logo-sub">Yen-An Chen</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">System-Level Programming Projects</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            This page offers a comprehensive case study of the System-Level Programming Projects, providing you with a Project Overview, details on the Tools Used.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="#nyush" class="btn btn--bg project-details__links-btn">Shell</a>
+          <a href="./system-level-programming.html#nyuenc" class="btn btn--bg project-details__links-btn">Encoder</a>
+          <a href="./system-level-programming.html#nyufile" class="btn btn--bg project-details__links-btn">File Recovery</a>
+        </div>
+      </div>
+    </section>
+    <section id="nyush" class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-title__header">Project 1: Shell</h3>
+              <h3 class="project-details__content-title">Overview</h3>
+              <p class="project-details__desc-para">
+                The shell is a critical component in the daily lives of computer scientists, software engineers, and system administrators. 
+                It acts as the primary command-line interface for interacting with the operating system, 
+                enabling users to harness the full power of various OS features. 
+                In this case study, we delve into the development of 'nyush' (New Yet Usable SHell), 
+                a simplified version of the Unix shell
+              </p>
+              <p class="project-details__desc-para">
+                In the 'nyush' project, I set out to create a command-line interface that 
+                replicates core functionalities of a typical Unix-like shell. Key features of 'nyush' include:
+              </p>
+              <ul class="project-details__desc-para">
+                <li>1. <strong>Command-Line Interface</strong> : Users can enter commands directly, mimicking the familiar shell experience.</li>
+                <li>2. <strong>Program Execution</strong> : 'nyush' supports the execution of both built-in and external programs, expanding its utility.</li>
+                <li>3. <strong>Process Management</strong> : I implemented process creation, management, and termination, ensuring robust control over running programs.</li>
+                <li>4. <strong>Signal Handling</strong> : 'nyush' handles signals effectively, including support for Ctrl-C and Ctrl-Z actions.</li>
+                <li>5. <strong>Input/Output Redirection</strong> : Flexible file handling is enabled through input and output redirection.</li>
+                <li>6. <strong>Pipes</strong> : Users can enter commands directly, mimicking the familiar shell experience.</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">C</div>
+                <div class="skills__skill">Linux</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">GCC</div>
+                <div class="skills__skill">Makefile</div>
+                <div class="skills__skill">GitHub</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Code</h3>
+              <a
+                href="https://github.com/YAChen123/2023SpringOS---nyush"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank">nyush</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nyuenc" class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-title__header">Project 2: Run-Length Encoding</h3>
+              <h3 class="project-details__content-title">Overview</h3>
+              <p class="project-details__desc-para">
+                Data compression is the process of encoding information using fewer bits than the original representation. 
+                Run-length encoding (RLE) is a simple and effective compression algorithm. 
+                In this case study, we will explore the development of a parallel RLE encoder named "nyuenc.
+              </p>
+              <p class="project-details__desc-para">
+                In the 'nyuenc' project, I develop a parallel run-length encoder, aiming to efficiently compress data using run-length encoding. Key features of 'nyuenc' include:
+              </p>
+              <ul class="project-details__desc-para">
+                <li>1. Building a run-length encoder capable of sequential data compression.</li>
+                <li>2. Parallelizing the encoding process using POSIX threads.</li>
+                <li>3. Implementing a thread pool for task execution.</li>
+                <li>4. Evaluating the performance improvement achieved through parallelization.</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">C</div>
+                <div class="skills__skill">Linux</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">GCC</div>
+                <div class="skills__skill">Makefile</div>
+                <div class="skills__skill">GitHub</div>
+                <div class="skills__skill">POSIX Threads</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Code</h3>
+              <a
+                href="https://github.com/YAChen123/nyuenc"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank">nyuenc</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nyufile" class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-title__header">Project 3: File Recovery</h3>
+              <h3 class="project-details__content-title">Overview</h3>
+              <p class="project-details__desc-para">
+                FAT32, a widely compatible file system, has been in use for over two decades. 
+                In the event of accidental file deletion, it's possible to recover these files from a FAT32 file system. 
+                This case study delves into the development of "nyufile" (Need You to Undelete my FILE), a FAT32 file recovery tool, 
+                to help users regain access to deleted files.
+              </p>
+              <p class="project-details__desc-para">
+                In the 'nyufile' project, I create utility to recover deleted files from a FAT32 file system. 
+                Users can specify the file to recover, and nyufile will attempt to restore it. 
+                Key Steps of 'nyufile' include:
+              </p>
+              <ul class="project-details__desc-para">
+                <li>1. Validate Usage.</li>
+                <li>2. Print File System Information.</li>
+                <li>3. List Root Directory.</li>
+                <li>4. Recover a Small File.</li>
+                <li>5. Recover a Large Contiguously Allocated File.</li>
+                <li>6. Detect Ambiguous File Recovery Requests.</li>
+                <li>7. Recover a Contiguously Allocated File with SHA-1 Hash.</li>
+                <li>8. Recover a Non-Contiguously Allocated File.</li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">C</div>
+                <div class="skills__skill">Linux</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">GCC</div>
+                <div class="skills__skill">Makefile</div>
+                <div class="skills__skill">GitHub</div>
+                <div class="skills__skill">FAT32</div>
+                <div class="skills__skill">SHA-1</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Code</h3>
+              <a
+                href="https://github.com/YAChen123/nyufile"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank">nyufile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/yenanchenn/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/YAChen123">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+
+
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Yen-An Chen</h4>
+            <p class="main-footer__short-desc">
+              A full-stack developer built both the frontend and backend applications
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Made by
+          <a rel="noreferrer" target="_blank" href="https://yenanchen.netlify.app/"
+            >Yen-An Chen</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
