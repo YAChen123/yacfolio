@@ -1,0 +1,169 @@
+/* Floating Container - Aligned with portfolio styles */
+.chat-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* The Trigger Button - Using portfolio theme color */
+.chat-trigger {
+  width: 60px;
+  height: 60px;
+  background-color: #0062b9; /* Portfolio theme color */
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Matches portfolio button shadow */
+  transition: transform 0.3s; /* Matches portfolio button transition */
+  font-weight: 700;
+}
+
+.chat-trigger:hover { 
+  transform: translateY(-3px); /* Matches portfolio button hover effect */
+}
+
+/* The Chat Window - Aligned with portfolio border radius */
+.chat-window {
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 5px; /* Matches portfolio commonBorderRadius */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.chat-header {
+  background: #0062b9; /* Portfolio theme color */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700; /* Matches portfolio font weights */
+  font-size: 1.6rem; /* Matches portfolio font sizes */
+  text-transform: uppercase; /* Matches portfolio text style */
+  letter-spacing: 1px; /* Matches portfolio letter spacing */
+}
+
+.close-btn { 
+  background: none; 
+  border: none; 
+  color: white; 
+  font-size: 24px; 
+  cursor: pointer; 
+  font-weight: 700;
+  transition: opacity 0.3s;
+}
+
+.close-btn:hover {
+  opacity: 0.8;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #fafafa; /* Matches portfolio about section background */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Message Bubbles - Aligned with portfolio styles */
+.msg { 
+  padding: 10px 14px; 
+  border-radius: 5px; /* Matches portfolio commonBorderRadius */
+  max-width: 80%; 
+  font-size: 1.6rem; /* Matches portfolio font sizes */
+  line-height: 1.6; /* Matches portfolio line heights */
+  font-weight: 600; /* Matches portfolio font weights */
+} 
+
+.msg--user { 
+  background: #0062b9; /* Portfolio theme color */
+  color: white; 
+  align-self: flex-end; 
+  border-bottom-right-radius: 2px; 
+} 
+
+.msg--bot { 
+  background: rgba(153, 153, 153, 0.2); /* Matches portfolio skills background */
+  color: #777; /* Matches portfolio text color */
+  align-self: flex-start; 
+  border-bottom-left-radius: 2px; 
+}
+
+.chat-form { 
+  padding: 15px; 
+  border-top: 1px solid #eee; 
+  display: flex; 
+  gap: 10px; 
+  background: white;
+} 
+
+.chat-form input { 
+  flex: 1; 
+  border: 1px solid #ebebeb; /* Matches portfolio input border */
+  padding: 1.2rem; /* Matches portfolio input padding (2rem scaled) */
+  border-radius: 5px; /* Matches portfolio commonBorderRadius */
+  outline: none; 
+  background: #f0f0f0; /* Matches portfolio input background */
+  font-size: 1.6rem; /* Matches portfolio input font size */
+  font-weight: 600; /* Matches portfolio input font weight */
+  color: #333; /* Matches portfolio input color */
+  font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.chat-form input::placeholder {
+  color: #999; /* Matches portfolio placeholder color */
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.chat-form button { 
+  background: #0062b9; /* Portfolio theme color */
+  color: white; 
+  border: none; 
+  padding: 1.2rem 2rem; /* Matches portfolio button padding */
+  border-radius: 5px; /* Matches portfolio commonBorderRadius */
+  cursor: pointer; 
+  font-size: 1.6rem; /* Matches portfolio button font size */
+  font-weight: 700; /* Matches portfolio button font weight */
+  text-transform: uppercase; /* Matches portfolio button style */
+  letter-spacing: 1px; /* Matches portfolio button letter spacing */
+  transition: transform 0.3s; /* Matches portfolio button transition */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Matches portfolio button shadow */
+}
+
+.chat-form button:hover {
+  transform: translateY(-3px); /* Matches portfolio button hover effect */
+}
+
+/* Responsive design - matches portfolio breakpoints */
+@media only screen and (max-width: 37.5em) {
+  .chat-widget {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-window {
+    width: calc(100vw - 40px);
+    max-width: 350px;
+    height: calc(100vh - 100px);
+    max-height: 500px;
+  }
+  
+  .chat-trigger {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
