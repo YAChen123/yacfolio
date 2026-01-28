@@ -1,0 +1,54 @@
+{
+  "name": "Yen-An Chen",
+  "current_role": "Software Engineer at GEICO",
+  "tagline": "Full Stack Web Developer & Backend Systems Specialist",
+  "education": "Master's in Computer Science from New York University (NYU)",
+  "location": "Greater New York Area",
+  "work_preferences": {
+    "style": "Hybrid (Preferred)",
+    "flexibility": "Flexible / Not mandatory"
+  },
+  "skills": {
+    "languages": ["Go", "C#", "Java", "Python", "C", "C++", "SQL", "JavaScript"],
+    "web_and_backend": ["Spring Boot", "React", "Redux", "PostgreSQL", "Redis", "DynamoDB"],
+    "tools_and_infrastructure": ["Temporal", "Titan", "Docker", "Kubernetes", "CI/CD", "AWS", "Linux", "Git"]
+  },
+  "work_experience": [
+    {
+      "company": "GEICO",
+      "role": "Software Engineer",
+      "team": "Commercial Billing Platform",
+      "highlights": [
+        "Contributed to the modernization of commercial billing APIs using Go and C#.",
+        "Achieved a 99% reduction in API latency for installment plan generation.",
+        "Eliminated 40+ redundant database queries per request, significantly improving backend scalability.",
+        "Implemented distributed workflows with Temporal and managed observability via Titan."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "TaskItNow (Personal Favorite)",
+      "tech": "React, Spring Boot, Azure",
+      "summary": "A comprehensive full-stack task management application. This is my proudest project because it allowed me to own the entire development lifecycle, from UI design to backend architecture and cloud deployment."
+    },
+    {
+      "title": "E-Commerce Promotion Microservice",
+      "tech": "Python, Flask, Docker, Kubernetes",
+      "summary": "A cloud-native microservice to manage e-commerce sales and promotions."
+    },
+    {
+      "title": "System-Level Programming",
+      "tech": "C, Linux",
+      "summary": "Built a custom Shell and a FAT32 file recovery system."
+    }
+  ],
+  "personal_interests": {
+    "hobbies": ["Cooking", "Running", "Currently training for the SF Marathon"],
+    "technical_passions": ["Distributed Systems", "Artificial Intelligence", "Operating Systems"]
+  },
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/yenanchenn/",
+    "github": "https://github.com/YAChen123"
+  }
+}
