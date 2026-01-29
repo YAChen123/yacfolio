@@ -32,7 +32,7 @@ exports.handler = async (event) => {
     }
 
     // 1. Load your portfolio.json from the root directory
-    const dataPath = path.resolve(__dirname, '../../portfolio.json');
+    const dataPath = path.resolve(process.cwd(), '../../portfolio.json');
     const portfolioData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
     // 2. Initialize Gemini with your Netlify Environment Variable
