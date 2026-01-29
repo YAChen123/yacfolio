@@ -2,7 +2,7 @@
 function toggleChat() {
     const windowEl = document.getElementById('chatWindow');
     const triggerEl = document.getElementById('chatTrigger');
-    
+
     if (windowEl.style.display === 'none' || windowEl.style.display === '') {
         windowEl.style.display = 'flex';
         triggerEl.style.display = 'none';
@@ -30,26 +30,64 @@ chatForm.addEventListener('submit', async (e) => {
     const message = chatInput.value.trim();
     if (!message) return;
 
+    // 1. Add user message and clear input
     addMessage(message, true);
     chatInput.value = '';
 
+    // 2. Create the animated "Ocean Wave" typing indicator
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'msg msg--bot typing-indicator';
+
+    // Create the three dots for the animation
+    for (let i = 0; i < 3; i++) {
+        const dot = document.createElement('span');
+        typingDiv.appendChild(dot);
+    }
+
+    messagesCont.appendChild(typingDiv);
+    messagesCont.scrollTop = messagesCont.scrollHeight;
+
     try {
-        // Point to the Netlify Function redirect (configured in netlify.toml)
         const response = await fetch('/api/chat', {
             method: 'POST',
-            body: JSON.stringify({ question: message }),
-            headers: { 'Content-Type': 'application/json' }
+            body: JSON.stringify({
+                question: message
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
         });
-        
+
         const data = await response.json();
-        
+
+        // 3. Remove the typing indicator once data arrives
+        if (messagesCont.contains(typingDiv)) {
+            messagesCont.removeChild(typingDiv);
+        }
+
         if (!response.ok) {
             addMessage(data.error || "Sorry, I'm having trouble thinking right now.", false);
             return;
         }
-        
-        addMessage(data.answer || "Sorry, I'm having trouble thinking right now.", false);
+
+        // 4. Split the answer by newlines (matching your updated System Prompt)
+        const parts = data.answer.split('\n');
+
+        parts.forEach((part, index) => {
+            const cleanText = part.replace(/\*/g, '').trim();
+
+            if (cleanText.length > 0) {
+                // Staggered appearance for the "Multi-Bubble" effect
+                setTimeout(() => {
+                    addMessage(cleanText, false);
+                }, index * 600);
+            }
+        });
+
     } catch (err) {
+        if (messagesCont.contains(typingDiv)) {
+            messagesCont.removeChild(typingDiv);
+        }
         console.error('Chat error:', err);
         addMessage("Connection error. Please try again later.", false);
     }
